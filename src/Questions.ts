@@ -95,7 +95,7 @@ export class Questions {
     //  alert('start' + this.questionNumber);
 
     const questions = [
-      "What do you think about scam? 1",
+      "What do you think about scam? 12",
       "What do you think about scam? 2",
       "What do you think about scam? 3",
       "What do you think about scam? 4",
