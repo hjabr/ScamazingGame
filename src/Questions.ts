@@ -53,7 +53,7 @@ export class Questions {
 
   public finalQuestion(): void {
     const questions = [
-      "What do you think about scam? 1",
+      "What do you think about scam 1?",
       "What do you think about scam? 2",
       "What do you think about scam? 3",
       "What do you think about scam? 4",
