@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "es2015",
+        "target": "es6",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "removeComments": true,
+        "outDir": "build/",
+        "noEmitOnError": true
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}
