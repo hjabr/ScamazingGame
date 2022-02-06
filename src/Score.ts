@@ -10,7 +10,7 @@ export class Score extends GameItem {
    *
    */
 
-  public getScore(): any {
+  public getScore(): number {
     return this.score;
   }
 
@@ -21,7 +21,7 @@ export class Score extends GameItem {
    *
    */
 
-  public setScore(score: any): void {
+  public setScore(score: number): void {
     this.score = score;
   }
 
