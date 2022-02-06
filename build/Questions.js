@@ -18,25 +18,22 @@ export class Questions {
     }
     finalQuestion() {
         const questions = [
-            "What do you think about scam? 1",
-            "What do you think about scam? 2",
-            "What do you think about scam? 3",
-            "What do you think about scam? 4",
-            "What do you think about scam? 5",
+            "Will you give out your personal information via e-mail, to unknown people?",
+            "Will you let people access your computer remotely?",
         ];
-        console.log(questions[this.gameItems.randomNumberForQuestions(1, 5)]);
+        console.log(questions[this.gameItems.randomNumberForQuestions(0, 1)]);
         document.getElementById("finalQuestionAreaInfo").style.display = "block";
         document.getElementById("finalQuestionText").innerHTML =
-            questions[this.gameItems.randomNumberForQuestions(1, 5)];
+            questions[this.gameItems.randomNumberForQuestions(0, 1)];
         document
-            .getElementById("finalQuestionAreaYes")
+            .getElementById("finalQuestionAreaNo")
             .addEventListener("click", function () {
             document.getElementById("win").style.display = "block";
             document.getElementById("finalQuestionAreaInfo").style.display = "none";
             new Audio("./assets/sound/6.wav").play();
         });
         document
-            .getElementById("finalQuestionAreaNo")
+            .getElementById("finalQuestionAreaYes")
             .addEventListener("click", function () {
             document.getElementById("loser").style.display = "block";
             document.getElementById("finalQuestionAreaInfo").style.display = "none";
@@ -45,10 +42,10 @@ export class Questions {
     }
     questionView() {
         const questions = [
-            "What do you think about scam? 1",
-            "What do you think about scam? 2",
-            "What do you think about scam? 3",
-            "What do you think about scam? 4",
+            "Don’t give out personal information in an email or when chatting online.",
+            "Be careful of offers that seem too good to be true.",
+            "Don’t let anyone remotely access your computer.",
+            "Watch out for spelling or grammatical mistakes which are a sign of scam.",
         ];
         console.log(questions[this.questionNumber]);
         document.getElementById("questionAreaInfo").style.display = "block";
