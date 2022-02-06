@@ -54,10 +54,17 @@ export class Questions {
   public finalQuestion(): void {
     const questions = [
       "What do you think about scam 1?",
+<<<<<<< HEAD
       "What do you think about scam 2?",
       "What do you think about scam 3?",
       "What do you think about scam 4?",
       "What do you think about scam 5?",
+=======
+      "What do you think about scam? 2",
+      "What do you think about scam? 3",
+      "What do you think about scam? 4",
+      "What do you think about scam? 5",
+>>>>>>> c50edd8e058b19e7514511a27efb59c2ee0d5401
     ];
 
     console.log(questions[this.gameItems.randomNumberForQuestions(1, 5)]);
